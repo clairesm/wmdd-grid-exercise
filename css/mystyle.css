@@ -1,0 +1,192 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: white;
+  background-image: linear-gradient( 
+    rgba(255, 255, 255, 1), 
+    rgba(255, 255, 255, 0.1)
+  ), url(/img/patterns/concrete-wall.png);
+}
+
+.wrapper {
+  margin: 0 5%;
+}
+
+.header-title {
+  background-color: #eeeeff;
+  padding: 1rem;
+  text-align: center;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  align-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.site-subheading {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.sub-heading-article {
+  padding: 1rem 5%;
+}
+
+main {
+  margin: 3rem 0;
+}
+
+.relative {
+  position: relative;
+  border-top: 2px solid #eeeeff;
+}
+
+h2 {  
+  position: absolute;
+  top: -.9rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: white;
+  border-left: 3px solid #eeeeff;
+  border-right: 3px solid #eeeeff;
+  margin: 0 25%;
+}
+
+.about-the-guitar {
+  padding-top: 5rem;
+}
+
+.image-wrapper {
+padding-top: .5rem;
+}
+
+.famous-players {
+margin-top: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.famous-players {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  padding: 0;
+}
+
+li {
+  font-style: italic;
+  font-weight: bold;
+  list-style-type: none;
+  text-align: center;
+
+  font-size: 0.8rem;
+  padding: 1rem 0;
+}
+
+li img {
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  padding-bottom: 0.8rem;
+}
+
+footer {
+  text-align: center;
+  margin: 3.5rem 0;
+}
+
+footer a {
+  background-color: black;
+  color: white;
+  padding: 1rem 1.2rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 425px) {
+h2 {
+margin: 0 30%;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  h2 {
+  margin: 0 35%;
+   }
+}
+
+@media screen and (min-width: 800px) {
+  h2 {
+  margin: 0 40%;
+    }
+  }
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    margin: 0 10%;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+  }
+
+  .header-title {
+padding: 0 2rem;
+  }
+
+  .header-middle {
+    margin: auto;
+    
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .site-subheading {
+    font-size: 1.2rem;
+  }
+
+
+  .about-the-guitar {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+  }
+
+  .about-the-guitar {
+    padding-top: 3rem;
+  }
+
+  .famous-players h3 {
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.3rem;
+  }
+
+  .fender-section {
+padding-top: .5rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  h2 {
+  margin: 0 42%;
+    }
+  }
